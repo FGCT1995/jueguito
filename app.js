@@ -18,6 +18,7 @@ function VerificarIntento() {
 
     if(intentos == intentosMaximos){
       asignarTextoElemento('p','Se alcanzaron los maximos intentos');
+      document.getElementById('reiniciar').removeAttribute('disabled');
 
     } else {
       
