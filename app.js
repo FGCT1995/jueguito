@@ -16,7 +16,7 @@ function asignarTextoElemento(elemento,texto){
 function VerificarIntento() {
     let numeroDeUsuario= parseInt(document.getElementById('valorUsuario').value);
 
-    if(intentos == intentosMaximos){
+    if(intentos > intentosMaximos && numeroDeUsuario != numeroSecreto){
       asignarTextoElemento('p','Se alcanzaron los maximos intentos');
       document.getElementById('reiniciar').removeAttribute('disabled');
 
